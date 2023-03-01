@@ -28,8 +28,8 @@ contactBtn.addEventListener("click", () => {
 
 const displayDate = () => {
   const date = document.getElementById("current-date");
-  const now = DateTime.now().toJSDate();
-  date.innerText = now;
+  const dateNow = DateTime.now();
+  date.innerHTML = dateNow.toString();
 };
 
 displayDate();

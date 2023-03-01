@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/2649a194d9.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Awesome Book</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <h1 class="logo">Awesome Book</h1>
+        <ul class="nav-list">
+          <li class="nav-items" id="list-btn">List</li>
+          <li class="nav-items" id="add-new-btn">Add New</li>
+          <li class="nav-items" id="contact-btn">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Current Date -->
+    <div id="current-date"></div>
+
+    <!-- List Section -->
+    <section id="list">
+      <h1>All Awesome Books</h1>
+      <div class="book-list"></div>
+    </section>
+
+    <!-- Add Book Section -->
+    <section id="add-book">
+      <h2>Add a new Book</h2>
+      <form id="form">
+        <p id="error"></p>
+        <input id="book-title" type="text" placeholder="Title" required />
+        <input id="author" type="name" placeholder="Author" required />
+        <button type="submit" id="add">Add</button>
+      </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-info">
+      <h2>Contact information</h2>
+      <p>
+        Do you have any questions or you just want to say "Hello"?<br />You can
+        reach out to us!
+      </p>
+      <ul>
+        <li>Our email: mail@mail.com</li>
+        <li>Our phone number: 00435 2217 2248 26</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      Copyrights <i class="fa-solid fa-copyright"></i> All rights reserved 2023
+    </footer>
+  </body>
 </html>
