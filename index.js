@@ -8,9 +8,9 @@ import { DateTime } from "./modules/luxon.js";
 const Error = document.getElementById("error");
 const myText = document.getElementById("text");
 const date = document.getElementById("date");
-const luxon = DateTime.local(new Date()).c;
+const luxon = DateTime.now().toJSDate();
 
-date.innerText = `${luxon.year}, ${luxon.month}, ${luxon.day}`;
+date.innerText = luxon;
 
 class BookCollection {
   constructor() {
