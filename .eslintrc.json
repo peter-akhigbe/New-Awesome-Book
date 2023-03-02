@@ -9,7 +9,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb-base"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "rules": {
     "no-shadow": "off",
     "no-param-reassign": "off",
@@ -20,7 +20,9 @@
         "js": "always",
         "json": "always"
       }
-    ]
+    ],
+    "prettier/prettier": "error"
   },
-  "ignorePatterns": ["dist/", "build/"]
+  "ignorePatterns": ["dist/", "build/"],
+  "plugins": ["prettier"]
 }
