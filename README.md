@@ -52,15 +52,13 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Awesome Books] <a name="about-project"></a>
 
-> This is Our Awesome Books Project. We used _HTML, CSS & JAVASCRIPT_ to create this Awesome Books Project.
+This is Our Awesome Books Project. We used _HTML, CSS & JAVASCRIPT_ to create this Awesome Books Project.
 
 **[Webpage]**
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Clien</summary>
@@ -89,8 +87,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Html structure with Button, Inputs, etc]**
 - **[Styling css with colors, borders, paddings, margins & sizes, etc]**
   \_ **[javascript functions, localStroage, objects, arrays, variables, etc]**
@@ -100,8 +96,6 @@ After you're finished please remove all the comments and instructions!
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -171,21 +165,17 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors">Peter</a>
-
-> This Project is created by Peter Akhigbe.
-
 ## 🛠 Built With <a name="built-with"></a>
 
 - HTML
 - CSS
 - JAVASCRIPT
 
-# <a name="authors">Peter Akhigbe</a>
+<!-- AUTHORS -->
 
-👤 **Peter**
+##  <a name="authors">👥 Authors</a>
+
+👤 **Peter Akhigbe**
 
 - GitHub: [@peter-akhigbe](https://github.com/peter-akhigbe)
 - Twitter: [@peter*akhigbe*](https://twitter.com/peter_akhigbe_)
@@ -194,6 +184,12 @@ Example:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **A page body**
+- [ ] **More CSS styles**
+- [ ] **JavaScript functionalties**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,8 +207,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -226,7 +220,5 @@ If you like this project...
 ## 📝 License <a name="license"></a>
 
 This project is [[MIT](https://choosealicense.com/licenses/mit/)](./LICENSE) licensed.
-
-> This project has [MIT license](https://choosealicense.com/licenses/mit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
