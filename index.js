@@ -3,8 +3,14 @@ import myShowContactView from "./modules/myShowContactView.js";
 import myAddBookList from "./modules/myAddBookList.js";
 import myRedirectButton from "./modules/myRedirectButton.js";
 
+import { DateTime } from "./modules/luxon.js";
+
 const Error = document.getElementById("error");
 const myText = document.getElementById("text");
+const date = document.getElementById("date");
+const luxon = DateTime.local(new Date()).c;
+
+date.innerText = `${luxon.year}, ${luxon.month}, ${luxon.day}`;
 
 class BookCollection {
   constructor() {
@@ -16,11 +22,11 @@ class BookCollection {
     this.myList = document.getElementById("list-holder");
   }
 
-  saveBooks() {
+  saveBooks = () => {
     localStorage.setItem(this.BOOKS_KEY, JSON.stringify(this.books));
-  }
+  };
 
-  addBook() {
+  addBook = () => {
     const title = this.myTitle.value.trim();
     const author = this.myAuthor.value.trim();
 
@@ -35,15 +41,15 @@ class BookCollection {
     } else {
       Error.textContent = "Please enter both title and author";
     }
-  }
+  };
 
-  removeBook(title) {
+  removeBook = (title) => {
     this.books = this.books.filter((book) => book.title !== title);
     this.saveBooks();
     this.renderBooks();
-  }
+  };
 
-  renderBooks() {
+  renderBooks = () => {
     this.myList.innerHTML = "";
 
     if (this.books.length === 0) {
@@ -72,7 +78,7 @@ class BookCollection {
         }
       });
     }
-  }
+  };
 
   init() {
     this.myAdd.addEventListener("click", () => this.addBook());
@@ -83,7 +89,7 @@ class BookCollection {
 const bookCollection = new BookCollection();
 bookCollection.init();
 
+myShowContactView();
 myRedirectButton();
 myBookShowList();
 myAddBookList();
-myShowContactView();
