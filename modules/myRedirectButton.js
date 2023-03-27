@@ -8,11 +8,11 @@ const myRedirectButton = () => {
   myInputSection.style.display = 'none';
   myContact.style.display = 'none';
 
-  function myButtonRedirect() {
+  const myButtonRedirect = () => {
     myTitleText.style.display = 'block';
     myBookHide.style.display = 'block';
     myInputSection.style.display = 'none';
-  }
+  };
 
   myRedirectBttn.addEventListener('click', myButtonRedirect);
 };
