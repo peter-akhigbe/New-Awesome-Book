@@ -1,6 +1,3 @@
-const Error = document.getElementById('error');
-const myText = document.getElementById('text');
-
 class BookCollection {
   constructor() {
     this.BOOKS_KEY = 'awesome-books';
@@ -9,6 +6,8 @@ class BookCollection {
     this.myAuthor = document.getElementById('input1');
     this.myAdd = document.getElementById('bttn');
     this.myList = document.getElementById('list-holder');
+    this.error = document.getElementById('error');
+    this.myText = document.getElementById('text');
   }
 
   saveBooks = () => {
@@ -26,9 +25,9 @@ class BookCollection {
       this.renderBooks();
       this.myTitle.value = '';
       this.myAuthor.value = '';
-      Error.textContent = '';
+      this.error.textContent = '';
     } else {
-      Error.textContent = 'Please enter both title and author';
+      this.error.textContent = 'Please enter both title and author';
     }
   };
 
@@ -57,7 +56,7 @@ class BookCollection {
         li.appendChild(removeBtn);
         this.myList.appendChild(li);
         this.myList.style.border = '2px solid #000';
-        myText.style.display = 'block';
+        this.myText.style.display = 'block';
         const hr = document.createElement('hr');
         li.appendChild(hr);
         const myListItems = document.querySelectorAll('.list-items');
@@ -72,6 +71,7 @@ class BookCollection {
   init() {
     this.myAdd.addEventListener('click', () => this.addBook());
     this.renderBooks();
+    // console.log(this.books);
   }
 }
 

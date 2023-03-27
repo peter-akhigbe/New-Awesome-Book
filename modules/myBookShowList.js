@@ -8,12 +8,12 @@ const myBookShowList = () => {
   myInputSection.style.display = 'none';
   myContact.style.display = 'none';
 
-  function myBooksAll() {
+  const myBooksAll = () => {
     myTitleText.style.display = 'block';
     myBookHide.style.display = 'block';
     myInputSection.style.display = 'none';
     myContact.style.display = 'none';
-  }
+  };
 
   myListShow.addEventListener('click', myBooksAll);
 };
